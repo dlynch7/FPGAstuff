@@ -50,3 +50,9 @@ Once the GUI opens, navigate to `/home/daniel/documents/FPGA/PapilioProjects/Swi
 ![loader2](/PapilioProjects/Switches_LEDs/images/loader2.png)
 
 Click `Do Selected Operations`
+
+Once it loads, you should see something like this!
+
+<p img align="center">
+  <a href="/PapilioProjects/Switches_LEDs/videos/helloFPGA.gif"><img align="center" src="https://raw.githubusercontent.com/dlynch7/FPGAstuff/master/PapilioProjects/Switches_LEDs/videos/helloFPGA.gif" width="480" ></a>
+</p>
