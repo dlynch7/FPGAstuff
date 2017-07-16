@@ -9,10 +9,13 @@ I am following [Hamsterworks](http://hamsterworks.co.nz/mediawiki/index.php/Main
 The Papilio Pro uses a different FPGA than the development boards suggested in the Hamsterworks book.
 
 I have a directory where I keep all my FPGA projects, so this is how the first screen of the "New Project Wizard" should look:
+
 ![newproject1](/PapilioProjects/Switches_LEDs/images/switches_LEDs_screenshot1.png)
 
 This is where things are different from Hamsterworks' documentation. The Papilio Pro's FPGA is a Spartan 6 XC6SLX9 FPGA in a TQG144 package. See Papilio's [instructions](http://papilio.cc/index.php?n=Papilio.GettingStartedISE) for proof. By default, the Wizard suggests Verilog as the preferred language, but Hamsterworks uses VHDL.
+
 ![newproject2](/PapilioProjects/Switches_LEDs/images/switches_LEDs_screenshot2.png)
 
 You should see the following when you click "Next>":
+
 ![newproject3](/PapilioProjects/Switches_LEDs/images/switches_LEDs_screenshot3.png)
