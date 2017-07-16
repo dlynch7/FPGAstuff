@@ -4,6 +4,8 @@ I am following [Hamsterworks](http://hamsterworks.co.nz/mediawiki/index.php/Main
 
 ## ToC
 - [Creating a new project](#creating-a-new-project)
+- [Setting behavior](#setting-behavior)
+- [Implementation constraints](#implementation-constraints)
 
 ## Creating a new project
 The Papilio Pro uses a different FPGA than the development boards suggested in the Hamsterworks book.
@@ -19,3 +21,13 @@ This is where things are different from Hamsterworks' documentation. The Papilio
 You should see the following when you click "Next>":
 
 ![newproject3](/PapilioProjects/Switches_LEDs/images/switches_LEDs_screenshot3.png)
+
+## Setting behavior
+This is no different from Hamsterworks' documentation, but it's important so I'm putting it here anyway:
+
+![behavior](/PapilioProjects/Switches_LEDs/images/behavior.png)
+
+## Implementation constraints
+This is _quite_ different from Hamsterworks's documentation. Every development board breaks out pins differently. Luckily, Papilio posted a generic implementation constraint file (.ucf) for the Papilio Pro, which I copied [here](/PapilioProjects/BPC3011-Papilio_Pro-general.ucf).
+This file says which FPGA pins are connected to which headers on the board. I decided on the following setup:
+![constraints](/PapilioProjects/Switches_LEDs/images/constraints.png)
