@@ -6,3 +6,9 @@ I am following [Hamsterworks](http://hamsterworks.co.nz/mediawiki/index.php/Main
 
 ## Creating a new project
 The Papilio Pro uses a different FPGA than the development boards suggested in the Hamsterworks book.
+
+![newproject1](/PapilioProjects/Switches_LEDs/images/switches_LEDs_screenshot1.png)
+
+![newproject2](/PapilioProjects/Switches_LEDs/images/switches_LEDs_screenshot2.png)
+
+![newproject3](/PapilioProjects/Switches_LEDs/images/switches_LEDs_screenshot3.png)
