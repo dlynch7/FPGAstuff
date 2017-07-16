@@ -6,6 +6,7 @@ I am following [Hamsterworks](http://hamsterworks.co.nz/mediawiki/index.php/Main
 - [Creating a new project](#creating-a-new-project)
 - [Setting behavior](#setting-behavior)
 - [Implementation constraints](#implementation-constraints)
+- [Writing to the FPGA](#writing-to-the-fpga)
 
 ## Creating a new project
 The Papilio Pro uses a different FPGA than the development boards suggested in the Hamsterworks book.
@@ -31,3 +32,21 @@ This is no different from Hamsterworks' documentation, but it's important so I'm
 This is _quite_ different from Hamsterworks's documentation. Every development board breaks out pins differently. Luckily, Papilio posted a generic implementation constraint file (.ucf) for the Papilio Pro, which I copied [here](/PapilioProjects/BPC3011-Papilio_Pro-general.ucf).
 This file says which FPGA pins are connected to which headers on the board. I decided on the following setup:
 ![constraints](/PapilioProjects/Switches_LEDs/images/constraints.png)
+
+## Writing to the FPGA
+First, follow Hamsterworks' instructions to generate a .bit file which will be written to the FPGA.
+
+Then, open Papilio Loader, the program that writes the .bit file to the FPGA. Again, my way of doing this is different from the documented way, but that's because I had a nightmare of a time getting `Papilio Loader` to run on my computer (Ubuntu 14.04 LTS); I eventually had to build the program from source. To open the GUI, open a new Terminal and type the following:
+```
+cd /opt/GadgetFactory/papilio-loader
+sudo ./papilio-loader.sh
+```
+
+You should then see something like this:
+![papilio-loader](/PapilioProjects/Switches_LEDs/images/start_papilio-loader_screenshot.png)
+
+Once the GUI opens, navigate to `/home/daniel/documents/FPGA/PapilioProjects/Switches_LEDs` and select `Switches_LEDs.bit`.
+
+![loader2](/PapilioProjects/Switches_LEDs/images/loader2.png)
+
+Click `Do Selected Operations`
