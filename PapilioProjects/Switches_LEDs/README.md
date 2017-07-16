@@ -1,6 +1,6 @@
 # Switches_LEDs
 
-I am following [Hamsterworks](http://hamsterworks.co.nz/mediawiki/index.php/Main_Page)' instructions for creating my first FPGA project, named "Switches_LEDs". I am using a different board (the [Papilio Pro LX9](http://papilio.gadgetfactory.net/index.php?n=Papilio.PapilioPro)) than the ones he suggests, so this document serves to keep track of the differences between my workflow and the workflow he documents in his [Intro to Spartan FPGA](https://github.com/hamsternz/IntroToSpartanFPGABook/blob/master/IntroToSpartanFPGABook.pdf) book.
+I am following [Hamsterworks](http://hamsterworks.co.nz/mediawiki/index.php/Main_Page)' instructions for creating my first FPGA project, named "Switches_LEDs". I am using a different board (the [Papilio Pro LX9](http://papilio.gadgetfactory.net/index.php?n=Papilio.PapilioPro)) than the ones he suggests, so this document serves to keep track of the differences between my workflow and the workflow he describes in his [Intro to Spartan FPGA](https://github.com/hamsternz/IntroToSpartanFPGABook/blob/master/IntroToSpartanFPGABook.pdf) book.
 
 ## ToC
 - [Creating a new project](#creating-a-new-project)
