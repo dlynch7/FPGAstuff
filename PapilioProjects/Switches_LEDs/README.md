@@ -25,7 +25,7 @@ You should see the following when you click "Next>":
 ## Setting behavior
 This is no different from Hamsterworks' documentation, but it's important so I'm putting it here anyway:
 
-![behavior](/PapilioProjects/Switches_LEDs/images/behavior.png)
+![behavior](/PapilioProjects/Switches_LEDs/images/behavioral.png)
 
 ## Implementation constraints
 This is _quite_ different from Hamsterworks's documentation. Every development board breaks out pins differently. Luckily, Papilio posted a generic implementation constraint file (.ucf) for the Papilio Pro, which I copied [here](/PapilioProjects/BPC3011-Papilio_Pro-general.ucf).
