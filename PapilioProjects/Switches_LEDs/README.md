@@ -7,6 +7,7 @@ I am following [Hamsterworks](http://hamsterworks.co.nz/mediawiki/index.php/Main
 - [Setting behavior](#setting-behavior)
 - [Implementation constraints](#implementation-constraints)
 - [Writing to the FPGA](#writing-to-the-fpga)
+- [Next project](#next-project)
 
 ## Creating a new project
 The Papilio Pro uses a different FPGA than the development boards suggested in the Hamsterworks book.
@@ -56,3 +57,14 @@ Once it loads, you should see something like this!
 <p img align="center">
   <a href="/PapilioProjects/Switches_LEDs/videos/helloFPGA.gif"><img align="center" src="https://raw.githubusercontent.com/dlynch7/FPGAstuff/master/PapilioProjects/Switches_LEDs/videos/helloFPGA.gif" width="480" ></a>
 </p>
+
+## Next project
+Module 3 of Hamsterworks' guide introduces Boolean logic operators (AND, OR, etc). The existing program can just be modified:
+
+```vhdl
+architecture Behavioral of Switches_LEDs is
+begin
+  LED_0 <= switch_0 AND switch_1;
+  LED_1 <= switch_0 OR switch_1;
+end Behavioral;
+```
